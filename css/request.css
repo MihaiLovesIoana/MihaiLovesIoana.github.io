@@ -1,0 +1,331 @@
+.earth {
+    background: linear-gradient(lightblue 87%, #00b200 1px);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -6;
+    top: 0;
+    left: 0;
+    color: black;
+    font-family: Raleway;
+    font-size: 400px;
+    text-align: center;
+    animation: 0.1s num;
+    animation-fill-mode: forwards;
+    animation-delay: 3.5s;
+}
+
+@keyframes num {
+    from {
+        color: black
+    }
+    to {
+        color: lightblue
+    }
+}
+
+.body {
+    height: 100px;
+    width: 55px;
+    background: linear-gradient(white 80px, gray 1px);
+    margin: auto;
+    margin-top: 490px;
+    border-radius: 50% 50% 10% 10%;
+    animation: 14.5s fly ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 3.5s;
+}
+
+@keyframes fly {
+    0% {
+        margin-top: 490px;
+    }
+    5% {
+        transform: rotate(-2deg);
+    }
+    10% {
+        transform: rotate(2deg);
+    }
+    15% {
+        transform: rotate(-2deg);
+    }
+    20% {
+        transform: rotate(2deg);
+        margin-top: 100px
+    }
+    25% {
+        transform: rotate(-2deg);
+        margin-top: 98px;
+    }
+    30% {
+        transform: rotate(2deg);
+        margin-top: 100px
+    }
+    35% {
+        transform: rotate(-2deg);
+        margin-top: 98px;
+    }
+    40% {
+        transform: rotate(2deg);
+        margin-top: 100px
+    }
+    45% {
+        transform: rotate(-2deg);
+        margin-top: 98px;
+    }
+    50% {
+        transform: rotate(2deg);
+        margin-top: 100px;
+    }
+    55% {
+        transform: rotate(-2deg);
+        margin-top: 98px;
+    }
+    60% {
+        transform: rotate(2deg);
+        margin-top: 100px
+    }
+    65% {
+        transform: rotate(-2deg);
+        margin-top: 98px;
+    }
+    70% {
+        transform: rotate(2deg);
+        margin-top: 100px
+    }
+    75% {
+        transform: rotate(-2deg);
+        margin-top: 98px;
+    }
+    80% {
+        transform: rotate(2deg);
+        margin-top: 100px
+    }
+    85% {
+        transform: rotate(-2deg);
+        margin-top: 98px;
+    }
+    90% {
+        transform: rotate(2deg);
+        margin-top: 100px
+    }
+    95% {
+        transform: rotate(-2deg);
+        margin-top: 98px;
+    }
+    97% {
+        margin-top: 100px;
+        transform: rotate(0deg);
+    }
+    100% {
+        margin-top: -200px;
+    }
+}
+
+.top {
+    height: 100px;
+    width: 55px;
+    background: linear-gradient(#ff1919 15px, transparent 1px);
+    position: absolute;
+    border-radius: 50% 50%;
+}
+
+.window {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 3px solid #2f4f4f;
+    background: lightblue;
+    position: absolute;
+    margin-top: 28px;
+    margin-left: 14px;
+}
+
+.finA, .finB, .finC {
+    background: #ff1919;
+    position: absolute;
+}
+
+.finA {
+    height: 30px;
+    width: 5px;
+    margin-top: 85px;
+    border-radius: 50% 20% 50% 50%;
+    margin-left: -3px;
+    z-index: -1;
+}
+
+.finB {
+    height: 30px;
+    width: 10px;
+    margin-top: 85px;
+    border-radius: 50%;
+    margin-left: 23px;
+}
+
+.finC {
+    height: 30px;
+    width: 5px;
+    margin-top: 85px;
+    border-radius: 20% 50% 50% 50%;
+    margin-left: 53px;
+    z-index: -1;
+}
+
+.sky, .troposphere, .stratosphere, .mesosphere {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    animation-timing-function: linear;
+}
+
+.sky {
+    background: lightblue;
+    animation: 3s sky;
+    z-index: -5;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sky {
+    from {
+        top: -100%;
+    }
+    to {
+        top: 0;
+    }
+}
+
+.troposphere {
+    background: linear-gradient(#4c4cff, #7f7fff);
+    animation: 4s tro;
+    animation-delay: 6.5s;
+    z-index: -4;
+    animation-fill-mode: forwards;
+}
+
+@keyframes tro {
+    from {
+        top: -100%;
+    }
+    to {
+        top: 0;
+    }
+}
+
+.stratosphere {
+    background: linear-gradient(#0000b2, #4c4cff);
+    animation: 4s strat;
+    animation-delay: 10s;
+    z-index: -3;
+    animation-fill-mode: forwards;
+}
+
+@keyframes strat {
+    from {
+        top: -100%;
+    }
+    to {
+        top: 0;
+    }
+}
+
+.mesosphere {
+    background: linear-gradient(#000000, #0000b2);
+    animation: 3.5s mes;
+    animation-delay: 13.5s;
+    z-index: -2;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mes {
+    from {
+        top: -100%;
+    }
+    to {
+        top: 0;
+    }
+}
+
+h2 {
+    color: transparent;
+    font-family: Raleway;
+    font-size: 80px;
+    text-align: center;
+    margin-top: 18%;
+    animation: 3s text;
+    animation-fill-mode: forwards;
+    animation-delay: 16.5s;
+}
+
+@keyframes text {
+    from {
+        color: transparent;
+    }
+    to {
+        color: white;
+    }
+}
+
+.fire {
+    height: 0;
+    width: 0;
+    border-top: 50px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: absolute;
+    margin-top: 97px;
+    z-index: -1;
+    margin-left: 18px;
+    border-radius: 50%;
+    animation: 14.5s fireUp;
+    animation-fill-mode: forwards;
+    animation-delay: 3.5s;
+}
+
+@keyframes fireUp {
+    0% {
+        border-top-color: transparent;
+    }
+    10% {
+        border-top: 40px solid orange;
+    }
+    20% {
+        transform: rotate(2deg);
+        border-top: 43px solid orange
+    }
+    30% {
+        transform: rotate(-1deg);
+        border-top: 37px solid orange
+    }
+    40% {
+        transform: rotate(1deg);
+        border-top: 43px solid orange
+    }
+    50% {
+        transform: rotate(-2deg);
+        border-top: 37px solid orange
+    }
+    60% {
+        transform: rotate(1deg);
+        border-top: 43px solid orange
+    }
+    70% {
+        transform: rotate(0deg);
+        border-top: 37px solid orange
+    }
+    80% {
+        border-top: 43px solid orange
+    }
+    90% {
+        border-top: 40px solid orange;
+    }
+    95% {
+        border-top: 100px solid orange;
+    }
+    100% {
+        border-top: 100px solid orange;
+    }
+}
