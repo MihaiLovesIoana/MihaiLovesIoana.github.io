@@ -10,6 +10,7 @@
     z-index: 1;
     transition: all .2s linear;
 }
+
 .arrow:before, .arrow:after {
     content: "";
     position: absolute;
@@ -22,24 +23,30 @@
     transform: translate(-50%, -50%) rotate(45deg);
     transition: all .2s linear;
 }
+
 .arrow:after {
     z-index: 3;
     top: 59%;
     left: 55%;
     transform: translate(-50%, -50%) rotate(-45deg);
 }
+
 .arrow:hover {
     border: solid 8px #777;
 }
+
 .arrow:hover:after, .arrow:hover:before {
     background: red;
 }
+
 .arrow:active {
     border: solid 8px yellow;
 }
+
 .arrow:active:after, .arrow:active:before {
     background: yellow;
 }
+
 .correct-align {
     margin-right: 15px;
 }
